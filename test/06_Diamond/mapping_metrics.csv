@@ -1,0 +1,2 @@
+accession,rname,startpos,endpos,numreads,covbases,coverage,meandepth,meanbaseq,meanmapq
+NODE_2788,NODE_2788_length_1253_cov_2.237245_rev,1,1253,40,1253,100,4.56185,35.8,59.5
