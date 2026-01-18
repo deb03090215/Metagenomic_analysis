@@ -179,8 +179,8 @@ Both BLASTn and DIAMOND provide complementary information for viral identificati
 To obtain a comprehensive view of viral candidates, the parsed outputs from Step 5 are compared and jointly interpreted.
 
 Rationale:
-* **BLASTn** is more reliable for detecting closely related viruses with high nucleotide similarity.
-* **DIAMOND (blastx)** is more sensitive for identifying divergent or novel viruses through protein-level conservation.
+* BLASTn is more reliable for detecting closely related viruses with high nucleotide similarity.
+* DIAMOND (blastx) is more sensitive for identifying divergent or novel viruses through protein-level conservation.
 
 As a result:
 * Some viral candidates may be detected by **both** methods.
@@ -220,14 +220,14 @@ python process_diamond_hmmscan_0714.py \
 
 ## (Optional) Step 7. Construction of consensus sequences (BLAST workflow only)
 
-This step is **only required for the BLAST-based workflow**.
+This step is only required for the BLAST-based workflow.
 
 In Step 6 (BLAST), reads are mapped to reference sequences automatically downloaded from NCBI.
 These reference FASTA files are stored under the `NCBI_nt/` directory and are named using the accession ID (e.g., `BK016511.1.fasta`).
 
-A consensus sequence is generated from the **sorted and indexed BAM file** using **Samtools**.
+A consensus sequence is generated from the sorted and indexed BAM file using Samtools.
 
-In contrast, the **DIAMOND workflow does not require an additional consensus-building step**.
+In contrast, the DIAMOND workflow does not require an additional consensus-building step.
 For DIAMOND, reads are mapped back to `contigs.fasta` in Step 6 to calculate **depth and coverage**, where the contigs themselves already serve as the sequence template. Therefore, no separate consensus sequence is constructed.
 
 ### Input
