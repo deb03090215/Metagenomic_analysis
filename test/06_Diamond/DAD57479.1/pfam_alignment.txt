@@ -1,0 +1,537 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             orfs_renamed.fasta
+# target HMM database:             /Users/tai-jungli/Library/Mobile Documents/com~apple~CloudDocs/Mac/2025_AS/03_M&M/01_script/Pfam/Pfam-A.hmm
+# per-dom hits tabular output:     pfam.domtblout
+# multithread parallelization:     12 workers
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ORF_1_NODE_2788_length_1253_cov_2.237245_rev  [L=411]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.5e-12   48.1   0.0    3.3e-12   47.0   0.0    1.6  1  Toprim_2  Toprim-like
+    3.3e-10   40.5   0.0    7.3e-10   39.3   0.0    1.6  1  Toprim_4  Toprim domain
+    4.2e-07   30.7   0.0    9.5e-07   29.6   0.0    1.7  1  Toprim_3  Toprim domain
+    4.3e-07   30.4   0.1    1.1e-06   29.1   0.0    1.8  2  Toprim    Toprim domain
+    0.00038   20.3   0.0    0.00075   19.3   0.0    1.4  1  DnaB_C    DnaB-like helicase C terminal domain
+     0.0078   16.7   0.2      0.017   15.6   0.2    1.6  1  DNAG_N    DNA primase catalytic core, N-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> Toprim_2  Toprim-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.0   0.0   8.2e-16   3.3e-12       1      73 [.      77     148 ..      77     172 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 47.0 bits;  conditional E-value: 8.2e-16
+                                      Toprim_2   1 vvvEgyiDvlSlaqagikesnvvallGtalteaqlkllkry.tkevilalDnDeaGrkaakrlae 64 
+                                                   ++vEg  D+lSl+++g++  n+v + G  ++ea+l+ l+r+   +++++lDnD+aGr+ a  +++
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev  77 FIVEGNSDALSLHNHGMT--NAVGICGLDFSEAHLNTLRRNgLYNITICLDNDAAGRQKAIDMLD 139
+                                                   69***************9..*********************7699***********999988888 PP
+
+                                      Toprim_2  65 llkeagldv 73 
+                                                   ++  ++ d+
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev 140 KVVAKTHDI 148
+                                                   876665444 PP
+
+>> Toprim_4  Toprim domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.3   0.0   1.8e-13   7.3e-10       3      81 ..      76     148 ..      74     152 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 39.3 bits;  conditional E-value: 1.8e-13
+                                      Toprim_4   3 iivVEgyaDvialekagykglvavlggalspldgigpedlkieslekikevilaldgDaeGekta 67 
+                                                   i +VEg+ D+++l+++g +++v ++g  + ++++++ ++++      + +++++ld+Da+G + a
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev  76 IFIVEGNSDALSLHNHGMTNAVGICGLDF-SEAHLNTLRRNG-----LYNITICLDNDAAGRQKA 134
+                                                   88***************************.******888888.....89**************99 PP
+
+                                      Toprim_4  68 lylaeklleegvkv 81 
+                                                      ++k+ ++ +++
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev 135 IDMLDKVVAKTHDI 148
+                                                   98888666665655 PP
+
+>> Toprim_3  Toprim domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.6   0.0   2.4e-10   9.5e-07       2      91 ..      76     175 ..      75     179 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 29.6 bits;  conditional E-value: 2.4e-10
+                                      Toprim_3   2 liiaEGietaLsi.reavtgtpvlAllsaanlkavafp.ervkrviiaaDnDaaeaGqeaaekla 64 
+                                                   ++i+EG  +aLs+ ++ +t++ ++++l+ ++    ++  ++  +++i++DnDaa  G++ a ++ 
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev  76 IFIVEGNSDALSLhNHGMTNAVGICGLDFSEAHLNTLRrNGLYNITICLDNDAA--GRQKAIDML 138
+                                                   79***********98899********99866654455535999***********..***999999 PP
+
+                                      Toprim_3  65 erleaa..gieavllep....eage......DwNDllrs 91 
+                                                   +++ a+  +i+   ++     e  +      D + ++r+
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev 139 DKVVAKthDIKFAFVFLpdeyE--NgvrvkiDPDEFVRK 175
+                                                   9986541145544444444442..122444466666665 PP
+
+>> Toprim  Toprim domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.0       2.8   1.1e+04      23      51 ..      30      68 ..      23      74 .. 0.58
+   2 !   29.1   0.0   2.8e-10   1.1e-06       2      92 ..      76     149 ..      75     153 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 2.8
+                                                  EEEEEESSSSEEHHH..........ECTTTHHHHHHHHH CS
+                                        Toprim 23 qavvallGhllnlek..........eikdkkkalkalke 51
+                                                  + v+   G+l+n +k          +i++k+++l  l++
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev 30 DGVFNEDGKLVNGPKfigtkngvkkNIYKKNERLYLLDK 68
+                                                  556666677777777666555555555555555555555 PP
+
+  == domain 2  score: 29.1 bits;  conditional E-value: 2.8e-10
+                                                   EEEESSHHHHHHHHHTHTTTCEEEEEESSSSEEHHHECTTTHHHHHHHHHHH.HHHSEEEEESSS CS
+                                        Toprim   2 liivEgpsdakalakalgrgfqavvallGhllnlekeikdkkkalkalkela.kkakevilatDp 65 
+                                                   ++ivEg+sda +l+++   g  ++v  +G  +++++           l+ l+  +  ++ +++D+
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev  76 IFIVEGNSDALSLHNH---GMTNAVGICGLDFSEAH-----------LNTLRrNGLYNITICLDN 126
+                                                   89**************...*****************...........9999966667******** PP
+
+                                                   SHHHHHHHHHHHHHHTHHHCTTEEEEE CS
+                                        Toprim  66 DreGeaiakkllevlkellekaigrve 92 
+                                                   D +G++ a + l    + + ++   ++
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev 127 DAAGRQKAIDML----DKVVAKTHDIK 149
+                                                   ****99888888....44444355555 PP
+
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   1.9e-07   0.00075       9      72 ..     337     401 ..     333     408 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 1.9e-07
+                                                   HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C   9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72 
+                                                   L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev 337 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 401
+                                                   566788888999*********************99976544349*****************9765 PP
+
+>> DNAG_N  DNA primase catalytic core, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.2   4.3e-06     0.017      80     128 .]       9      70 ..       5      70 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 4.3e-06
+                                                   EEEEE-TTS-EEEEEEEES..........SS-SS.SEE...E--SBTTB-CCC-EETHHHHH CS
+                                        DNAG_N  80 mfPikdekgkvvgFgGRal..........eeekkaKYl...NspetelFkKsklLygldeak 128
+                                                   ++ i+de g+ vgF +R l          +  + +K++   N  +++++kK++ Ly ld+a+
+  ORF_1_NODE_2788_length_1253_cov_2.237245_rev   9 IYTICDEFGRPVGFQARNLnydgvfnedgKLVNGPKFIgtkNGVKKNIYKKNERLYLLDKAR 70 
+                                                   899****************9999997544344578998444566799**********99985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (411 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                      1032  (0.0428643); expected 481.5 (0.02)
+Passed bias filter:                      743  (0.0308606); expected 481.5 (0.02)
+Passed Vit filter:                        71  (0.00294899); expected 24.1 (0.001)
+Passed Fwd filter:                         6  (0.000249211); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               6  [number of targets reported over threshold]
+# CPU time: 0.14u 0.10s 00:00:00.24 Elapsed: 00:00:00.14
+# Mc/sec: 10604.40
+//
+Query:       ORF_2_NODE_2788_length_1253_cov_2.237245_rev  [L=319]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.1e-06   27.2   0.0    1.2e-05   26.0   0.0    1.7  1  Toprim_2  Toprim-like
+    0.00024   21.0   0.0     0.0005   19.9   0.0    1.4  1  DnaB_C    DnaB-like helicase C terminal domain
+     0.0067   17.0   0.1      0.015   15.9   0.0    1.7  2  Toprim_4  Toprim domain
+  ------ inclusion threshold ------
+      0.015   16.1   0.0      0.039   14.8   0.0    1.8  1  Toprim_3  Toprim domain
+
+
+Domain annotation for each model (and alignments):
+>> Toprim_2  Toprim-like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.0   0.0   1.9e-09   1.2e-05      20      73 ..       2      56 ..       1      80 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 26.0 bits;  conditional E-value: 1.9e-09
+                                      Toprim_2 20 snvvallGtalteaqlkllkry.tkevilalDnDeaGrkaakrlaellkeagldv 73
+                                                  +n+v + G  ++ea+l+ l+r+   +++++lDnD+aGr+ a  +++++  ++ d+
+  ORF_2_NODE_2788_length_1253_cov_2.237245_rev  2 TNAVGICGLDFSEAHLNTLRRNgLYNITICLDNDAAGRQKAIDMLDKVVAKTHDI 56
+                                                  48999*****************7699***********999988888876665444 PP
+
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   0.0   8.4e-08    0.0005       9      72 ..     245     309 ..     241     316 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 8.4e-08
+                                                   HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C   9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72 
+                                                   L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_2_NODE_2788_length_1253_cov_2.237245_rev 245 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 309
+                                                   567788888999*********************99976544349*****************9765 PP
+
+>> Toprim_4  Toprim domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.0   2.5e-06     0.015      21      82 ..       2      57 ..       1      60 [. 0.83
+   2 ?   -4.0   0.0         4   2.4e+04      51      65 ..     255     269 ..     249     270 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 2.5e-06
+                                      Toprim_4 21 kglvavlggalspldgigpedlkieslekikevilaldgDaeGektalylaeklleegvkvs 82
+                                                  +++v ++g  + ++++++ ++++      + +++++ld+Da+G + a   ++k+ ++ ++++
+  ORF_2_NODE_2788_length_1253_cov_2.237245_rev  2 TNAVGICGLDF-SEAHLNTLRRNG-----LYNITICLDNDAAGRQKAIDMLDKVVAKTHDIK 57
+                                                  58999999999.999999777777.....89**************99998886666656555 PP
+
+  == domain 2  score: -4.0 bits;  conditional E-value: 4
+                                      Toprim_4  51 kevilaldgDaeGek 65 
+                                                   ++vi+   +++ G++
+  ORF_2_NODE_2788_length_1253_cov_2.237245_rev 255 EKVIFIGGSSNSGKT 269
+                                                   578888888888876 PP
+
+>> Toprim_3  Toprim domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.8   0.0   6.4e-06     0.039      20      92 ..       3      84 ..       1      87 [. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 6.4e-06
+                                      Toprim_3 20 gtpvlAllsaanlkavafp.ervkrviiaaDnDaaeaGqeaaeklaerleaa..gieavllep.... 79
+                                                  ++ ++++l+ ++    ++  ++  +++i++DnDaa  G++ a ++ +++ a+  +i+   ++     
+  ORF_2_NODE_2788_length_1253_cov_2.237245_rev  3 NAVGICGLDFSEAHLNTLRrNGLYNITICLDNDAA--GRQKAIDMLDKVVAKthDIKFAFVFLpdey 67
+                                                  555666666544442244435899***********..***999999998654114554444444444 PP
+
+                                      Toprim_3 80 eage......DwNDllrse 92
+                                                  e  +      D + ++r+ 
+  ORF_2_NODE_2788_length_1253_cov_2.237245_rev 68 E--NgvrvkiDPDEFVRKY 84
+                                                  2..1234444666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (319 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                      1059  (0.0439857); expected 481.5 (0.02)
+Passed bias filter:                      753  (0.031276); expected 481.5 (0.02)
+Passed Vit filter:                        71  (0.00294899); expected 24.1 (0.001)
+Passed Fwd filter:                         4  (0.000166141); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.13u 0.10s 00:00:00.23 Elapsed: 00:00:00.14
+# Mc/sec: 8307.33
+//
+Query:       ORF_3_NODE_2788_length_1253_cov_2.237245_rev  [L=275]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    0.00019   21.3   0.0    0.00039   20.3   0.0    1.4  1  DnaB_C    DnaB-like helicase C terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   0.0   1.6e-08   0.00039       9      72 ..     201     265 ..     197     272 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 1.6e-08
+                                                   HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C   9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72 
+                                                   L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_3_NODE_2788_length_1253_cov_2.237245_rev 201 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 265
+                                                   567788888999*********************99976544349*****************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (275 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                       807  (0.0335189); expected 481.5 (0.02)
+Passed bias filter:                      551  (0.0228859); expected 481.5 (0.02)
+Passed Vit filter:                        60  (0.00249211); expected 24.1 (0.001)
+Passed Fwd filter:                         1  (4.15351e-05); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.12u 0.10s 00:00:00.22 Elapsed: 00:00:00.14
+# Mc/sec: 7197.25
+//
+Query:       ORF_4_NODE_2788_length_1253_cov_2.237245_rev  [L=210]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+     0.0001   22.2   0.0    0.00024   21.0   0.0    1.5  2  DnaB_C    DnaB-like helicase C terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.1      0.18   4.3e+03     227     233 ..      60      66 ..      37     102 .. 0.61
+   2 !   21.0   0.0   9.8e-09   0.00024       9      72 ..     136     200 ..     132     207 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.18
+                                                   EEEEEEE CS
+                                                   xxxxxxx RF
+                                        DnaB_C 227 aeiiiaK 233
+                                                   +  ii K
+  ORF_4_NODE_2788_length_1253_cov_2.237245_rev  60 KRAIIDK 66 
+                                                   3333333 PP
+
+  == domain 2  score: 21.0 bits;  conditional E-value: 9.8e-09
+                                                   HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C   9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72 
+                                                   L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_4_NODE_2788_length_1253_cov_2.237245_rev 136 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 200
+                                                   567788888999*********************99976544349*****************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (210 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                      1256  (0.0521681); expected 481.5 (0.02)
+Passed bias filter:                      790  (0.0328128); expected 481.5 (0.02)
+Passed Vit filter:                        66  (0.00274132); expected 24.1 (0.001)
+Passed Fwd filter:                         1  (4.15351e-05); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.12u 0.10s 00:00:00.22 Elapsed: 00:00:00.14
+# Mc/sec: 5513.57
+//
+Query:       ORF_5_NODE_2788_length_1253_cov_2.237245_rev  [L=201]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    9.5e-05   22.3   0.0    0.00022   21.1   0.0    1.5  2  DnaB_C    DnaB-like helicase C terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.1      0.17     4e+03     227     233 ..      51      57 ..      28      93 .. 0.61
+   2 !   21.1   0.0     9e-09   0.00022       9      72 ..     127     191 ..     123     198 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.17
+                                                   EEEEEEE CS
+                                                   xxxxxxx RF
+                                        DnaB_C 227 aeiiiaK 233
+                                                   +  ii K
+  ORF_5_NODE_2788_length_1253_cov_2.237245_rev  51 KRAIIDK 57 
+                                                   3333333 PP
+
+  == domain 2  score: 21.1 bits;  conditional E-value: 9e-09
+                                                   HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C   9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72 
+                                                   L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_5_NODE_2788_length_1253_cov_2.237245_rev 127 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 191
+                                                   567788888999*********************99976544349*****************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (201 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                      1182  (0.0490945); expected 481.5 (0.02)
+Passed bias filter:                      740  (0.030736); expected 481.5 (0.02)
+Passed Vit filter:                        61  (0.00253364); expected 24.1 (0.001)
+Passed Fwd filter:                         1  (4.15351e-05); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.12u 0.11s 00:00:00.23 Elapsed: 00:00:00.15
+# Mc/sec: 5029.35
+//
+Query:       ORF_6_NODE_2788_length_1253_cov_2.237245_rev  [L=185]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.5e-05   22.5   0.0    0.00018   21.4   0.0    1.5  1  DnaB_C    DnaB-like helicase C terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.0   7.6e-09   0.00018       9      72 ..     111     175 ..     107     182 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 7.6e-09
+                                                   HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C   9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72 
+                                                   L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_6_NODE_2788_length_1253_cov_2.237245_rev 111 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 175
+                                                   567788888999*********************99976544349*****************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (185 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                      1050  (0.0436119); expected 481.5 (0.02)
+Passed bias filter:                      663  (0.0275378); expected 481.5 (0.02)
+Passed Vit filter:                        55  (0.00228443); expected 24.1 (0.001)
+Passed Fwd filter:                         1  (4.15351e-05); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.12u 0.11s 00:00:00.23 Elapsed: 00:00:00.15
+# Mc/sec: 4543.10
+//
+Query:       ORF_7_NODE_2788_length_1253_cov_2.237245_rev  [L=144]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+
+   [No hits detected that satisfy reporting thresholds]
+
+
+Domain annotation for each model (and alignments):
+
+   [No targets detected that satisfy reporting thresholds]
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (144 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                       400  (0.0166141); expected 481.5 (0.02)
+Passed bias filter:                      316  (0.0131251); expected 481.5 (0.02)
+Passed Vit filter:                        16  (0.000664562); expected 24.1 (0.001)
+Passed Fwd filter:                         0  (0); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               0  [number of targets reported over threshold]
+# CPU time: 0.12u 0.12s 00:00:00.24 Elapsed: 00:00:00.15
+# Mc/sec: 3583.27
+//
+Query:       ORF_8_NODE_2788_length_1253_cov_2.237245_rev  [L=115]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.4e-05   23.4   0.0    5.4e-05   23.1   0.0    1.1  1  DnaB_C      DnaB-like helicase C terminal domain
+  ------ inclusion threshold ------
+      0.099   12.5   0.0       0.12   12.1   0.0    1.1  1  Zeta_toxin  Zeta toxin
+
+
+Domain annotation for each model (and alignments):
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.1   0.0   4.5e-09   5.4e-05       9      72 ..      41     105 ..      36     112 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 23.1 bits;  conditional E-value: 4.5e-09
+                                                   HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C   9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72 
+                                                   L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_8_NODE_2788_length_1253_cov_2.237245_rev  41 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 105
+                                                   667788888999*********************99976544349*****************9765 PP
+
+>> Zeta_toxin  Zeta toxin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0     1e-05      0.12      13      61 ..      48     100 ..      40     114 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1e-05
+                                    Zeta_toxin  13 qerPvavllaGqpGAGKtelaellkeelq...rqgnvvrld.pDelrelhPey 61 
+                                                   + + ++++++G++ +GKt+    l   ++   ++  v+ l   D+ +el P +
+  ORF_8_NODE_2788_length_1253_cov_2.237245_rev  48 DIQEKVIFIGGSSNSGKTSWQVNLSWRIAennPHAMVIFLSiDDSAKELLPRF 100
+                                                   47889*************98777766665544555566664145567777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (115 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                       454  (0.018857); expected 481.5 (0.02)
+Passed bias filter:                      428  (0.017777); expected 481.5 (0.02)
+Passed Vit filter:                        58  (0.00240904); expected 24.1 (0.001)
+Passed Fwd filter:                         2  (8.30703e-05); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.11u 0.10s 00:00:00.21 Elapsed: 00:00:00.15
+# Mc/sec: 2952.48
+//
+Query:       ORF_9_NODE_2788_length_1253_cov_2.237245_rev  [L=109]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.9e-05   23.6   0.0    4.7e-05   23.3   0.0    1.0  1  DnaB_C      DnaB-like helicase C terminal domain
+  ------ inclusion threshold ------
+      0.089   12.6   0.0       0.11   12.3   0.0    1.1  1  Zeta_toxin  Zeta toxin
+
+
+Domain annotation for each model (and alignments):
+>> DnaB_C  DnaB-like helicase C terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.3   0.0   3.9e-09   4.7e-05       9      72 ..      35      99 ..      30     106 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 23.3 bits;  conditional E-value: 3.9e-09
+                                                  HHHHCTSBXTTXEEEEEEXTTSSHHHHHHHHHHHHHHCSTSE.EEEEESSSXHHHHHHHHHHHHH CS
+                                                  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxx RF
+                                        DnaB_C  9 LdkltsGlqksdLiiiaarpsmGKtalalniaenvalkkkkk.vaifslEmskeqlveRllasea 72
+                                                  L ++t G  ++++i i++    GKt+  +n+  ++a ++ ++ v+++s++ s+++l+ R+++ +a
+  ORF_9_NODE_2788_length_1253_cov_2.237245_rev 35 LSATTDGDIQEKVIFIGGSSNSGKTSWQVNLSWRIAENNPHAmVIFLSIDDSAKELLPRFICYDA 99
+                                                  667888888999*********************99976544349*****************9765 PP
+
+>> Zeta_toxin  Zeta toxin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0     9e-06      0.11      13      61 ..      42      94 ..      34     108 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 9e-06
+                                    Zeta_toxin 13 qerPvavllaGqpGAGKtelaellkeelq...rqgnvvrld.pDelrelhPey 61
+                                                  + + ++++++G++ +GKt+    l   ++   ++  v+ l   D+ +el P +
+  ORF_9_NODE_2788_length_1253_cov_2.237245_rev 42 DIQEKVIFIGGSSNSGKTSWQVNLSWRIAennPHAMVIFLSiDDSAKELLPRF 94
+                                                  47889*************98777766665544555566664145577777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (109 residues searched)
+Target model(s):                       24076  (3869939 nodes)
+Passed MSV filter:                       411  (0.0170709); expected 481.5 (0.02)
+Passed bias filter:                      388  (0.0161156); expected 481.5 (0.02)
+Passed Vit filter:                        56  (0.00232597); expected 24.1 (0.001)
+Passed Fwd filter:                         2  (8.30703e-05); expected 0.2 (1e-05)
+Initial search space (Z):              24076  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.11s 00:00:00.21 Elapsed: 00:00:00.15
+# Mc/sec: 2791.58
+//
+[ok]
